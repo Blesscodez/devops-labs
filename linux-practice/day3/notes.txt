@@ -1,0 +1,124 @@
+
+# Linux Practical Learning – Week 1
+
+## Day 2: Linux Fundamentals
+
+### 1. Navigation and Directory Management
+Commands practised:
+- `pwd` – displays the current working directory.
+- `cd` – changes directories.
+- `ls -la` – lists files, including hidden files.
+- `ls /` – lists root directory contents.
+- `ls /home` – displays home directories.
+- `ls /etc` – displays system configuration files.
+- `ls /var` – displays variable system data.
+- `ls /tmp` – displays temporary files.
+
+### 2. File Management
+Commands practised:
+- `mkdir` – creates directories.
+- `touch` – creates empty files.
+- `echo` – writes text into files.
+- `cat` – displays file contents.
+- `nano` – edits text files.
+
+### 3. Linux File Permissions
+Commands practised:
+- `ls -l` – displays file permissions.
+- `chmod` – changes file permissions.
+- `chmod 600 filename` – gives the owner read and write permissions only.
+
+Permission values:
+- Read (r) = 4
+- Write (w) = 2
+- Execute (x) = 1
+
+### 4. System Monitoring
+Commands practised:
+- `free -h` – displays memory usage.
+- `df -h` – displays disk space usage.
+- `top` – monitors running processes.
+- `uptime` – displays system uptime and load averages.
+
+### 5. Networking Fundamentals
+Commands practised:
+- `ip addr` – displays network interfaces and IP addresses.
+- `ping -c 4 google.com` – tests network connectivity.
+- `curl -I https://github.com` – retrieves HTTP response headers.
+
+---
+
+## Day 3: Linux System Administration
+
+### 1. User and Group Management
+Commands practised:
+- `sudo groupadd developers` – creates a group.
+- `sudo useradd -m -s /bin/bash devops-trainee` – creates a user.
+- `sudo usermod -aG developers devops-trainee` – adds a user to a supplementary group.
+- `id devops-trainee` – displays user and group IDs.
+- `sudo passwd devops-trainee` – sets a user's password.
+- `su - devops-trainee` – switches to another user.
+- `exit` – exits the current user session.
+
+### 2. APT Package Management
+APT is the package management tool used by Ubuntu and Debian-based distributions.
+
+Commands practised:
+- `sudo apt update` – refreshes package information.
+- `sudo apt upgrade` – upgrades installed packages.
+- `sudo apt install nginx` – installs Nginx.
+- `apt search nginx` – searches for packages.
+- `apt show nginx` – displays package information.
+- `dpkg -l nginx` – checks package installation status.
+- `nginx -v` – displays the Nginx version.
+- `sudo apt remove nginx` – removes a package.
+- `sudo apt purge nginx` – removes a package and its configuration files.
+
+### 3. Linux Service Management
+systemctl is used to manage systemd services.
+
+Commands practised:
+- `sudo systemctl status nginx` – checks service status.
+- `sudo systemctl start nginx` – starts Nginx.
+- `sudo systemctl stop nginx` – stops Nginx.
+- `sudo systemctl restart nginx` – restarts Nginx.
+- `sudo systemctl reload nginx` – reloads Nginx configuration.
+- `sudo systemctl enable nginx` – enables automatic startup.
+- `sudo systemctl disable nginx` – disables automatic startup.
+- `sudo systemctl is-enabled nginx` – checks startup configuration.
+- `curl -I http://localhost` – tests the local web server's HTTP response.
+
+### 4. Linux Logs and Troubleshooting
+Logs help administrators investigate system events and application failures.
+
+Commands practised:
+- `ls -lh /var/log` – lists log files.
+- `sudo tail -n 20 /var/log/syslog` – displays the latest system log entries.
+- `sudo tail -f /var/log/syslog` – monitors new log entries.
+- `sudo journalctl -n 20` – displays recent journal entries.
+- `sudo journalctl -u nginx` – displays Nginx service logs.
+- `sudo tail -n 20 /var/log/nginx/error.log` – displays recent Nginx errors.
+- `logger "Test message"` – generates a system log message.
+- `grep` – searches for matching text in files.
+
+---
+
+## Key Learning Outcomes
+
+By completing Day 2 and Day 3, I gained practical experience in:
+
+1. Navigating the Linux filesystem.
+2. Creating and managing files and directories.
+3. Understanding Linux permissions.
+4. Monitoring system resources.
+5. Testing network connectivity.
+6. Managing Linux users and groups.
+7. Installing software using APT.
+8. Installing and managing an Nginx web server.
+9. Managing Linux services with systemctl.
+10. Inspecting system logs and troubleshooting services.
+
+## DevOps Relevance
+
+These Linux skills provide a foundation for server administration, application deployment, access management, software installation, service monitoring and troubleshooting in DevOps environments.
+
