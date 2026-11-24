@@ -1,0 +1,22 @@
+Learning Linux commands for Devops
+cd - changes directory
+~ - represents your home directory
+ls - lists files and directories
+la - displas hidden files and detaialed information
+curl -I https://github.com - checks the HTTP response headers from GitHub
+ping -c 4 google.com - Tests network connectivity
+ip addr - Displays nrtwork interfaces and IP addresses
+uptime - displays how long your system has been running
+yop - Displays running processes(Press q to exit)
+df -h - dispays disk usage
+free -h - diplays memory usage
+chmod 600 permissions.txt - changes permissions
+cd ~/devops-labs - returning to my devops workspace
+mkdir kinux-practice - creating a directory
+cd linux-practice - entering a directory
+touch commands.txt permissions.txt system-info.txt - creating 3 files
+ls -l - checking my files
+echo "Learning Linux commands for DevOps" > commands.txt - writing something into my file
+cat commands.txt - reading the file contents
+pwd - displays my current working directory(location)
+ 
